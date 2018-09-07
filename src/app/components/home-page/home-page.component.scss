@@ -1,14 +1,6 @@
 @import "./../../../scss/variables.scss";
 #home-page {
   margin-top: 3.5em;
-  nav {
-    #navbarNav {
-      justify-content: center;
-        .nav-item {
-          margin: 0 4em;
-        }
-    }
-  }
   .wrapper-wrapper {
     background-image: url("https://via.placeholder.com/1250x1050");
     min-height: 500px;
@@ -33,7 +25,7 @@
    justify-content: center;
    .invitation {
      background-color: white;
-     margin-top: 10%;
+     margin-top: 7%;
      padding: 3em;
      height: $invitation-height;
      width: 80%;
@@ -41,28 +33,34 @@
        font-family: 'Pacifico', cursive;
        background-color: $invitation-color;
        box-shadow: 0 0 2em 0 $box-shadowing-color;
-       padding: 2em;
+       padding: 2rem;
        height: 100%;
        width: 100%;
        &-heading {
-         font-size: 2em;
+         font-size: 2rem;
          text-align: center;
        }
        &-names {
         font-family: 'Great Vibes', cursive;
-        font-size: 4em;
+        font-size: 4rem;
         text-align: center;
-        margin-bottom: 30%;
+        margin-bottom: 15%;
        }
        &-joyful {
-        font-size: 2em;
+        font-size: 2rem;
         text-align: center;
        }
        &-dates {
-        font-size: 2em;
+        font-size: 2rem;
         text-align: center;
        }
      }
    }
  }
+}
+
+@media screen and (max-width: 700px) {
+  .invitation {
+    width: 100% !important;
+  }
 }
