@@ -11,7 +11,8 @@
     background-size: cover;
  }
  .wrapper-supporting {
-  margin-bottom: 500px;
+  // TODO remove this margin
+  // margin-bottom: 500px;
   background-image: url("https://via.placeholder.com/1250x550");
   min-height: 250px;
   background-attachment: fixed;
@@ -24,7 +25,7 @@
    flex-direction: row;
    justify-content: center;
    .invitation {
-     background-color: white;
+     background-color: $white-color;
      margin-top: 7%;
      padding: 3em;
      height: $invitation-height;

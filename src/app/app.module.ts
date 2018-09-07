@@ -7,6 +7,7 @@ import { OurStoryComponent } from './components/our-story/our-story.component';
 import { TheWeddingComponent } from './components/the-wedding/the-wedding.component';
 import { GettingThereComponent } from './components/getting-there/getting-there.component';
 import {AppRoutingModule} from './app.routing';
+import { TimerComponent } from './components/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {AppRoutingModule} from './app.routing';
     OurStoryComponent,
     TheWeddingComponent,
     GettingThereComponent,
+    TimerComponent,
   ],
   imports: [
     BrowserModule,
