@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top top-nav-bar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,15 +8,27 @@
           <a class="nav-link" [routerLink] = "['/home']">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink] = "['/our-story']">OUR STORY</a>
+          <a class="nav-link" (click)="goTo('our-story')">OUR STORY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink] = "['/the-wedding']">THE WEDDING</a>
+          <a class="nav-link" (click)="goTo('the-wedding')">THE WEDDING</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink] = "['/getting-there']">GETTING THERE</a>
+          <a class="nav-link" (click)="goTo('getting-there')">GETTING THERE</a>
         </li>
       </ul>
     </div>
 </nav>
-<router-outlet></router-outlet>
+<app-home-page></app-home-page>
+<app-our-story id="our-story"></app-our-story>
+<app-the-wedding id="the-wedding"></app-the-wedding>
+<nav class="navbar navbar-light bg-light footer-nav-bar">
+    <div class="footer">
+      <div class="row1 row">
+          <i class="fa fa-facebook footer-icon"></i>
+          <i class="fa fa-twitter footer-icon"></i>
+          <i class="fa fa-instagram footer-icon"></i>
+        </div>
+        <p>© 2023 by Tanya & Josh. Proudly created with Wix.com</p>
+    </div>
+</nav>

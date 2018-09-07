@@ -1,0 +1,50 @@
+@import "./../../../scss/variables.scss";
+.the-wedding-wrapper {
+  background-color: $gray-color;
+  .the-wedding {
+    min-height: 60vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    &-container {
+      width: 100%;
+      &-register {
+        button {
+          margin-top: 0.6em;
+          background-color: $rsvp-button;
+          padding: 0.5em 1.5em;
+          border: 1px solid $rsvp-button;
+          color: $white-color;
+
+        }
+      }
+      &-rows {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+    &-heading {
+      font-size: 2em;
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+    }
+    &-when-and-where {
+      margin: 1em;
+      p {
+        font-size: 1.5em;
+        text-align: center;
+        font-family: 'Great Vibes', cursive;
+      }
+      .the-wedding-where {
+        font-size: 3em;
+      }
+      .the-wedding-when {
+        font-size: 3em;
+      }
+    }
+  }
+
+}

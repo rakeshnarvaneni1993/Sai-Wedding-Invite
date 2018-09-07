@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sai-web';
+  /**
+   * Moves the view to the page user clicks on.
+   */
+  goTo(pageCd: string) {
+    const ourStory = document.getElementById(pageCd);
+    ourStory.scrollIntoView({behavior: 'smooth'});
+  }
 }
