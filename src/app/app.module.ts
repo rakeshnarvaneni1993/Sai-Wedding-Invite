@@ -8,6 +8,7 @@ import { TheWeddingComponent } from './components/the-wedding/the-wedding.compon
 import { GettingThereComponent } from './components/getting-there/getting-there.component';
 import {AppRoutingModule} from './app.routing';
 import { TimerComponent } from './components/timer/timer.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,10 @@ import { TimerComponent } from './components/timer/timer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAu8WN38SsCvopdVuuRGYXpRIrhzNVlK2Q'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

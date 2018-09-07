@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top top-nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="top-nav-bar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" [routerLink] = "['/home']">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" (click)="goTo('home-page')">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" (click)="goTo('our-story')">OUR STORY</a>
@@ -19,9 +19,10 @@
       </ul>
     </div>
 </nav>
-<app-home-page></app-home-page>
+<app-home-page id="home-page"></app-home-page>
 <app-our-story id="our-story"></app-our-story>
 <app-the-wedding id="the-wedding"></app-the-wedding>
+<app-getting-there id="getting-there"></app-getting-there>
 <nav class="navbar navbar-light bg-light footer-nav-bar">
     <div class="footer">
       <div class="row1 row">

@@ -14,7 +14,7 @@ export class TimerComponent implements OnInit {
   constructor() { }
   ngOnInit() {
     setInterval(() => {
-      const marriageDate = moment('Fri Dec 14 2018 15:43:53 GMT-0400 (Eastern Daylight Time)');
+      const marriageDate = moment('Fri Dec 18 2018 15:21:00 GMT-0400 (Indian Standard Time)');
       const now = moment(new Date());
       this.timerDays  = marriageDate.diff(now, 'days');
       const computeHours = moment(now).add(this.timerDays, 'days');
