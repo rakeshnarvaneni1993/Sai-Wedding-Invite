@@ -63,5 +63,9 @@
 @media screen and (max-width: 700px) {
   .invitation {
     width: 100% !important;
+    padding: 1em !important;
+    &-main-names {
+      font-size: 2rem !important;
+    }
   }
 }
