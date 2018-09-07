@@ -14,9 +14,13 @@
     left:0;
     width: 100%;
     z-index:1;
+    min-height: 80vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
     &-heading {
       text-align: center;
       font-family: 'Great Vibes', cursive;
